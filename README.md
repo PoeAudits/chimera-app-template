@@ -1,3 +1,24 @@
+# PoeAudits Chimera Template
+
+This is a version of Recon-Fuzz create-chimera-app I personalized for myself. It is free to use as is, and make sure to check out the original linked below.
+
+This is a work in progress and subject to change. 
+
+A few of the changes I made:
+
+- Removed the counter contracts
+- Replaced with a singleton contract to delegate call into implementations: Idea from https://www.youtube.com/watch?v=ZM6479HeI5U
+- Added foundry.toml settings I typically use
+    - verbosity 3
+    - ignored_error_codes
+    - localhost endpoint
+    - fuzz, invariant, fmt profiles
+- Added Makefile with some basic actions
+- Removed remappings
+    - My setup does not work with remappings and I prefer absolute imports
+
+
+## Original https://github.com/Recon-Fuzz/create-chimera-app/tree/main
 ## Create Chimera App
 
 
